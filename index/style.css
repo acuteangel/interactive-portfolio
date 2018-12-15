@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Pixeletter;
+    src: url(../Assets/Fonts/PixeletterBold.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: Pixeletter;
+    color: white;
+}
+
+#wrapper{
+    margin: auto;
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-areas: ". static interactive ."
+}
+#static{grid-area: static}
+#interactive{grid-area: interactive}
+
+.choice{
+    border: 10px double white;
+    border-radius: 25px;
+    margin: 5px;
+    max-height: 600px;
+    max-width: 470px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    max-width: 470px;
+    border-radius: 25px;
+}
+
+img:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+     -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; 
+    width: 100%;
+    background-color: rgba(255, 255, 255, 40%);
+  }
+
+  @media screen and (max-width: 959px) {
+    .center{
+        font-size: 5.75vw;
+    }
+  }
+  @media screen and (orientation: portrait) {
+    #wrapper{
+        margin: auto;
+        display: block;
+    }
+    .choice{
+        margin: auto;
+    }
+    .center{
+        font-size: 55px;
+    }
+  }

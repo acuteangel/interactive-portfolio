@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Pixeletter;
+    src: url(../Assets/Fonts/Pixeletter.ttf);
+}
+@font-face {
+    font-family: PixeletterBold;
+    src: url(../Assets/Fonts/PixeletterBold.ttf);
+}
+
+body {
+    /* background-color: black; */
+    background-image: url("../Assets/Images/Pokemon-Landscape-8bit-Landscape-blue.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: url(../Assets/Images/sword_02c.png), auto;
+    color: white;
+    font-family: Pixeletter;
+    line-height: 24px;
+    font-size: 22px;
+}
+
+a:hover, .drop-down:hover{
+    cursor: url(../Assets/Images/sword_02e.png), auto;
+}
+
+a:hover{
+    color: red;
+}
+
+div a:visited{
+    color: blue;
+}
+
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 10px solid white;
+}
+
+.heart{
+    margin: 15px 2px;
+    height: 30px;
+    width: 30px;
+
+    background: url('../Assets/Images/heart_animated_1.png') 0px 0px;
+    background-size: 150px 30px;
+}
+
+#first-heart{
+    margin-left: 15px;
+}
+
+#animated-heart{
+    background-position-x: 60px;
+}
+
+#coin{
+    margin: 15px 0px;
+    height: 30px;
+    width: 30px;
+
+    background: url('../Assets/Images/MonedaD.png') 0px 0px;
+    background-size: 150px 30px;
+}
+
+li {
+    /* display: inline;     */
+    float: left;
+}
+
+.navbar-right{
+    float: right;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+}
+
+#wrapper {
+    border: 10px solid white;
+    width: 900px;
+    margin: 20px auto;
+    background-color: black;
+    padding:10px;
+}
+
+img {
+    width: 290px;
+    margin: 20px;
+    float: left;
+}
+
+#cleo {
+    float: right;
+}
+
+h2{
+    font-size: 32px;
+    font-family: PixeletterBold;
+    margin: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+hr {
+    margin: 20px;
+}
+
+h4 {
+    font-family: PixeletterBold;
+}
+
+.gallery-item {
+    border: 5px solid white;
+    margin: 5px 20px;
+    padding: 15px;
+}
+
+.drop-down{
+    float: right;
+    margin-top: -22px;
+    font-size: 24px;
+}
+
+.gallery-item div{
+    display: none;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.difficulty {
+    margin: auto 0px;
+}

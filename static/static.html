@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Angel Aquas Static Portfolio</title>
+    <link rel="stylesheet" href = "../reset.css">
+    <link rel="stylesheet" href = "./static.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  </head>
+  <body>
+      <header>
+        <ul id="navbar">
+            <li class="heart" id="first-heart"></li>
+            <li class="heart"></li>
+            <li class="heart"></li>
+            <li class="heart" id="animated-heart"></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="../interactive/interactive.html">Interactive Portfolio</a></li>            
+            <li class="navbar-right" id="linkedin"><a href="https://www.linkedin.com/in/angelaquas/" target="_blank">LinkedIn</a></li>
+            <li class="navbar-right"><a href="https://github.com/acuteangel" target="_blank">GitHub</a></li>
+            <li class="navbar-right" id="coin"></li>
+        </ul>
+      </header>
+    <div id="wrapper">
+            <div id="about">
+                    <h2>About</h2>
+                    <hr>
+                    <img src="../Assets/Images/me.jpg" alt="Personal photo">
+                    <p class="bio">                
+                        I am a Web Development student, looking to find work as a game developer or web developer.
+                        I am currently located in Los Angeles, but have spent a majority of my life in Sacramento.
+                        I graduated from University of California, Los Angeles in 2015 with a BS in Mathematics. 
+                        I'm currently supplementing this education with a UCLA Extension course.
+                        So far I've studied C++, Unity, HTML, CSS, JavaScript, jQuery, Node.js, Express.js, Handlebars.js, Firebase, MySQL, Sequelize.js, and Python.
+                        On my portfolio page, you can see different assignments I've completed for this course.
+                        You may also visit my GitHub to view the readme for each of these projects.
+        
+                    </p>
+                    <img src="../Assets/Images/cleo.jpg" alt="my cat" id="cleo">
+                    <p class="bio" >
+                        I was born July 26, 1993 in Sacramento, California. In my free time, I try to visit the gym as often as possible. 
+                        I am very passionate about rock climbing and have been going to the rock climbing gym at least 4 days a week for the past 10 months.
+                        Other hobbies and interests of mine include video games, anime, fashion, cooking, baking, sleeping, and animals.
+                        I have a single cat, pictured right. 
+                        Her name is Cleo and I've had her all of her life, about 18 years.
+                        I have been vegan for over 5 years and try to be involved with animal rights activism when I can.
+                    </p>
+                    <br>
+                    <p>I can be found at the following locations:</p>
+                    <p>GitHub : <a href=https://github.com/acuteangel target="_blank">https://github.com/acuteangel</a></p>
+                    <p>LinkedIn : <a href=https://www.linkedin.com/in/angelaquas/ target="_blank">https://www.linkedin.com/in/angelaquas/</a></p>
+                    <br>
+                    <br>
+            </div>
+            <hr>
+            <div id="gallery">
+                <h2 style=text-align:center>Gallery</h2>
+                <hr>
+                <p>A collection of all my completed apps and games, ordered by newest first.</p>
+                
+                <div class="gallery-item">
+                    <h4>Burger</h4>
+                    <p class="drop-down" data-id=11>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★★ </p>
+                    <div id="content-11">
+                        <p>An app that uses a self-made ORM to interact with a Handlebars injected site.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/friend-finder target="blank">https://github.com/acuteangel/Constructor-Word-Guess</a></p>
+                        <p>Uses: Node.js, Express.js, npm path, Heroku, Handlebars.js, MySQL</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Friend Finder</h4>
+                    <p class="drop-down" data-id=10>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★ </p>
+                    <div id="content-10">
+                        <p>A survey using Node.js and Express.js. Gets and Posts results using a built-in API.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/friend-finder target="blank">https://github.com/acuteangel/Constructor-Word-Guess</a></p>
+                        <p>Uses: Node.js, Express.js, npm path, Heroku</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Bamazon</h4>
+                    <p class="drop-down" data-id=9>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★ </p>
+                    <div id="content-9">
+                        <p>A multi-part node app, mimicking a shopping application where all interactions update the MySQL database.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/mysql-node-hw-bamazon target="blank">https://github.com/acuteangel/mysql-node-hw-bamazon</a></p>
+                        <p>Uses: Node.js, npm inquirer, MySQL, npm table</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Constructor Word Guess</h4>
+                    <p class="drop-down" data-id=8>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★ </p>
+                    <div id="content-8">
+                        <p>An introduction to Constructors. A remake of my prior Word Guess Game, using letter and word constructor objects.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/Constructor-Word-Guess target="blank">https://github.com/acuteangel/Constructor-Word-Guess</a></p>
+                        <p>Uses: Node.js, npm inquirer</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>LIRI Bot</h4>
+                    <p class="drop-down" data-id=7>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★ </p>
+                    <div id="content-7">
+                        <p>An introductory Node assignment. Uses user input to process commands through the Spotify API.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/LIRI-bot target="blank">https://github.com/acuteangel/LIRI-bot</a></p>
+                        <p>Uses: Node.js, Spotify API, npm file-system</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Vrikshah Foundation Webpage</h4>
+                    <p class="drop-down" data-id=6>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★★★ (Max)</p>
+                    <div id="content-6">
+                        <p>A group project, creating a website for a volunteer organization. Duties included integration of calendar using FullCalendar library, connecting the calendar to Firebase, and integrating Google Maps API.</p>
+                        <p>Repository: <a href=https://github.com/farstarz/VrikshahFoundation target="blank">https://github.com/farstarz/VrikshahFoundation</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery, FullCalendar, Firebase, Google Maps API, Express.js, Moment.js, Donorbox</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Rock Paper Scissors Game</h4>
+                    <p class="drop-down" data-id=5>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★</p>
+                    <div id="content-5">
+                        <p>An online Rock-Paper-Scissors game for 2 players and as many spectators. Uses Google Firebase to update selections, score, and chat in realtime.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/OnlineRPS target="blank">https://github.com/acuteangel/OnlineRPS</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery, Firebase</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>GifTastic</h4>
+                    <p class="drop-down" data-id=4>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★</p>
+                    <div id="content-4">
+                        <p>An introduction to APIs using the GIPHY API. </p>
+                        <p>Repository: <a href=https://github.com/acuteangel/GifTastic target="blank">https://github.com/acuteangel/GifTastic</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery, GIPHY API</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Trivia Game</h4>
+                    <p class="drop-down" data-id=3>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★</p>
+                    <div id="content-3">
+                        <p>An introductory assignment to set-timeout and set-interval. A basic trivia game using randomizers and modulo to generate questions and answers.</p>
+                        <p>Repository: <a href=https://github.com/acuteangel/TriviaGame target="blank">https://github.com/acuteangel/TriviaGame</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>RPG Game</h4>
+                    <p class="drop-down" data-id=2>Details &#9776;</p>
+                    <p class="difficulty">Difficulty: ★★★★</p>
+                    <div id="content-2">
+                        <p>A turn based fighting game. A homework assignment after learning jQuery. </p>
+                        <p>Repository: <a href=https://github.com/acuteangel/unit-4-game target="blank">https://github.com/acuteangel/unit-4-game</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <h4>Word Guess Game</h4>
+                    <p class="drop-down" data-id=1>Details &#9776;</p>                    
+                    <p class="difficulty">Difficulty: ★★</p>
+                    <div id="content-1">
+                        <p>A hangman-like game. One of my first bootcamp assignments. </p>
+                        <p>Repository: <a href=https://github.com/acuteangel/word-guess-game target="blank">https://github.com/acuteangel/word-guess-game</a></p>
+                        <p>Uses: HTML, CSS, JavaScript, jQuery</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script>
+        $(".drop-down").on("click", function(){            
+            var id = "#content-"+$(this).attr("data-id");
+            console.log(id);
+            $(id).animate({height: "toggle"})
+        })
+        heartanimate();
+        function heartanimate(){
+            setInterval(function(){                
+                var currentx = parseInt($("#animated-heart").css("background-position-x"));
+                var newx = (currentx-30)%60 + 60
+                $("#animated-heart").css("background-position-x", newx+"px")
+            }, 900);
+        }
+        coinanimate();
+        function coinanimate(){
+            setInterval(function(){                
+                var currentx = parseInt($("#coin").css("background-position-x"));
+                var newx = (currentx-30)%150
+                $("#coin").css("background-position-x", newx+"px")
+            }, 180);
+        }
+    </script>
+  </body>
+</html>
