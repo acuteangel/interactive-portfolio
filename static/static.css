@@ -34,15 +34,24 @@ div a:visited{
 }
 
 #navbar{
+    width:auto;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 10px;
     background-color: black;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    padding: 20px 10px;
 }
 
 ul{
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     overflow: hidden;
     border: 10px solid white;
 }
@@ -74,7 +83,6 @@ ul{
 }
 
 li {
-    /* display: inline;     */
     float: left;
 }
 
@@ -84,26 +92,32 @@ li {
 
 a {
     color: lightblue;
+    word-wrap: break-word;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 18px 10px;
+
+#nav-interactive{
+    display:none;
+}
+#nav-about{
+    float: right;
 }
 
 #wrapper {
     border: 10px solid white;
-    width: 900px;
+    width: 300px;
     margin: 20px auto;
     background-color: black;
+    padding:0px;
+}
+
+#about{
     padding:10px;
 }
 
 img {
-    width: 290px;
-    margin: 20px;
+    width: 260px;
+    margin: 10px;
     float: left;
 }
 
@@ -118,7 +132,7 @@ h2{
 }
 
 p{
-    margin: 20px;
+    margin: 10px;
 }
 
 hr {
@@ -127,12 +141,14 @@ hr {
 
 h4 {
     font-family: PixeletterBold;
+    font-size: 20px;
+    width: 172px
 }
 
 .gallery-item {
     border: 5px solid white;
     margin: 5px 20px;
-    padding: 15px;
+    padding: 5px;
 }
 
 .drop-down{
@@ -143,11 +159,44 @@ h4 {
 
 .gallery-item div{
     display: none;
-    overflow: hidden;
-    width: fit-content;
+    overflow: hidden;    
 }
 
 .difficulty {
     margin: auto 0px;
 }
 
+.gallery-item p{
+    word-wrap:break-word;
+    padding-top: 12px;
+}
+
+.details{
+    display: none;
+}
+
+[id*="content-"] {
+    padding:0px;
+}
+
+
+@media only screen and (min-width: 768px){
+    #wrapper{
+        width:700px;
+    }
+    .details{
+        display: inline-block;
+    }
+    h4{
+        width:auto;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #wrapper{
+        width:900px;
+    }
+    #nav-interactive{
+        display:block;
+    }
+}

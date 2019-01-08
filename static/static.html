@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Angel Aquas Static Portfolio</title>
     <link rel="stylesheet" href = "../reset.css">
     <link rel="stylesheet" href = "./static.css">
@@ -15,11 +16,11 @@
             <li class="heart"></li>
             <li class="heart"></li>
             <li class="heart" id="animated-heart"></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="../interactive/interactive.html">Interactive Portfolio</a></li>            
-            <li class="navbar-right" id="linkedin"><a href="https://www.linkedin.com/in/angelaquas/" target="_blank">LinkedIn</a></li>
-            <li class="navbar-right"><a href="https://github.com/acuteangel" target="_blank">GitHub</a></li>
+            <li><a id="nav-about" href="#about">About</a></li>
+            <li><a id="nav-gallery" href="#gallery">Gallery</a></li>
+            <li><a id="nav-interactive" href="../interactive/interactive.html">Unity Portfolio</a></li>            
+            <li class="navbar-right" id="linkedin"><a id="nav-linkedin" href="https://www.linkedin.com/in/angelaquas/" target="_blank">LinkedIn</a></li>
+            <li class="navbar-right"><a id="nav-github" href="https://github.com/acuteangel" target="_blank">GitHub</a></li>
             <li class="navbar-right" id="coin"></li>
         </ul>
       </header>
@@ -43,7 +44,7 @@
                         I was born July 26, 1993 in Sacramento, California. In my free time, I try to visit the gym as often as possible. 
                         I am very passionate about rock climbing and have been going to the rock climbing gym at least 4 days a week for the past 10 months.
                         Other hobbies and interests of mine include video games, anime, fashion, cooking, baking, sleeping, and animals.
-                        I have a single cat, pictured right. 
+                        I have a single cat, pictured here. 
                         Her name is Cleo and I've had her all of her life, about 18 years.
                         I have been vegan for over 5 years and try to be involved with animal rights activism when I can.
                     </p>
@@ -58,10 +59,10 @@
             <div id="gallery">
                 <h2 style=text-align:center>Gallery</h2>
                 <hr>
-                <p>A collection of all my completed apps and games, ordered by newest first.</p>
+                <p style="padding:10px">A collection of all my completed apps and games, ordered by newest first.</p>
                 <div class="gallery-item">
                     <h4>Ginni Lee Webpage</h4>
-                    <p class="drop-down" data-id=12>Details &#9776;</p>
+                    <p class="drop-down" data-id=12><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★★★ (Max)</p>
                     <div id="content-12">
                         <p>A group project, creating a website for a volunteer organization. Duties included integration of calendar using FullCalendar library, connecting the calendar to Firebase, and integrating Google Maps API.</p>
@@ -71,7 +72,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Vrikshah Foundation Webpage</h4>
-                    <p class="drop-down" data-id=6>Details &#9776;</p>
+                    <p class="drop-down" data-id=6><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★★★ (Max)</p>
                     <div id="content-6">
                         <p>A group project, creating a website for a volunteer organization. Duties included integration of calendar using FullCalendar library, connecting the calendar to Firebase, and integrating Google Maps API.</p>
@@ -81,7 +82,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>RPG Game</h4>
-                    <p class="drop-down" data-id=2>Details &#9776;</p>
+                    <p class="drop-down" data-id=2><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★★</p>
                     <div id="content-2">
                         <p>A turn based fighting game. A homework assignment after learning jQuery. </p>
@@ -91,7 +92,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Burger</h4>
-                    <p class="drop-down" data-id=11>Details &#9776;</p>
+                    <p class="drop-down" data-id=11><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★★ </p>
                     <div id="content-11">
                         <p>An app that uses a self-made ORM to interact with a Handlebars injected site.</p>
@@ -101,7 +102,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Friend Finder</h4>
-                    <p class="drop-down" data-id=10>Details &#9776;</p>
+                    <p class="drop-down" data-id=10><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★ </p>
                     <div id="content-10">
                         <p>A survey using Node.js and Express.js. Gets and Posts results using a built-in API.</p>
@@ -111,7 +112,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Bamazon</h4>
-                    <p class="drop-down" data-id=9>Details &#9776;</p>
+                    <p class="drop-down" data-id=9><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★ </p>
                     <div id="content-9">
                         <p>A multi-part node app, mimicking a shopping application where all interactions update the MySQL database.</p>
@@ -121,7 +122,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Constructor Word Guess</h4>
-                    <p class="drop-down" data-id=8>Details &#9776;</p>
+                    <p class="drop-down" data-id=8><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★ </p>
                     <div id="content-8">
                         <p>An introduction to Constructors. A remake of my prior Word Guess Game, using letter and word constructor objects.</p>
@@ -131,7 +132,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>LIRI Bot</h4>
-                    <p class="drop-down" data-id=7>Details &#9776;</p>
+                    <p class="drop-down" data-id=7><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★ </p>
                     <div id="content-7">
                         <p>An introductory Node assignment. Uses user input to process commands through the Spotify API.</p>
@@ -142,7 +143,7 @@
                 
                 <div class="gallery-item">
                     <h4>Rock Paper Scissors Game</h4>
-                    <p class="drop-down" data-id=5>Details &#9776;</p>
+                    <p class="drop-down" data-id=5><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★★</p>
                     <div id="content-5">
                         <p>An online Rock-Paper-Scissors game for 2 players and as many spectators. Uses Google Firebase to update selections, score, and chat in realtime.</p>
@@ -152,7 +153,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>GifTastic</h4>
-                    <p class="drop-down" data-id=4>Details &#9776;</p>
+                    <p class="drop-down" data-id=4><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★</p>
                     <div id="content-4">
                         <p>An introduction to APIs using the GIPHY API. </p>
@@ -162,7 +163,7 @@
                 </div>
                 <div class="gallery-item">
                     <h4>Trivia Game</h4>
-                    <p class="drop-down" data-id=3>Details &#9776;</p>
+                    <p class="drop-down" data-id=3><span class="details">Details</span> &#9776;</p>
                     <p class="difficulty">Difficulty: ★★</p>
                     <div id="content-3">
                         <p>An introductory assignment to set-timeout and set-interval. A basic trivia game using randomizers and modulo to generate questions and answers.</p>
@@ -172,7 +173,7 @@
                 </div>                
                 <div class="gallery-item">
                     <h4>Word Guess Game</h4>
-                    <p class="drop-down" data-id=1>Details &#9776;</p>                    
+                    <p class="drop-down" data-id=1><span class="details">Details</span> &#9776;</p>                    
                     <p class="difficulty">Difficulty: ★★</p>
                     <div id="content-1">
                         <p>A hangman-like game. One of my first bootcamp assignments. </p>
