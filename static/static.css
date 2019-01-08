@@ -30,7 +30,7 @@ a:hover{
 }
 
 div a:visited{
-    color: blue;
+    color: lightblue;
 }
 
 #navbar{
@@ -82,6 +82,9 @@ li {
     float: right;
 }
 
+a {
+    color: lightblue;
+}
 
 li a {
     display: block;
@@ -147,3 +150,4 @@ h4 {
 .difficulty {
     margin: auto 0px;
 }
+
